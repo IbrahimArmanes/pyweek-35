@@ -17,6 +17,7 @@ clock = pygame.time.Clock()
 # Define the arrow class
 class Arrow(pygame.sprite.Sprite):
     def __init__(self, start_pos, end_pos):
+        super().__init__()
         self.image = pygame.Surface((20, 20), pygame.SRCALPHA)
         pygame.draw.rect(self.image, WHITE, pygame.Rect(0, 0, 20, 2))
         self.rect = self.image.get_rect()
