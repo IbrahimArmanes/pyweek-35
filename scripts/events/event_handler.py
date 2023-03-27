@@ -12,4 +12,4 @@ events_dic = {pygame.QUIT:    shutdown,       # which function is called dependi
 
 def handle_event(event):                      # call corresponding function
     if event.type in events_dic.keys():
-        events_dic[event.type]() 
+        events_dic[event.type](event) 
